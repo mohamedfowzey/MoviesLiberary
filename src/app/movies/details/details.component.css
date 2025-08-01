@@ -1,0 +1,10 @@
+.image-card{
+    margin: 5px;
+    border-radius: 8px;
+}
+.imgs-container::-webkit-scrollbar{
+    display: none;
+}
+.text-red{
+    color: #e60000;
+}

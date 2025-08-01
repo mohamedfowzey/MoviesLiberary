@@ -1,0 +1,14 @@
+
+<h2 class="text-red">{{movie.title}}</h2>
+
+<div class="d-flex flex-nowrap overflow-auto imgs-container"><img *ngFor="let image of images" src="{{mainService.mediaBase+(image.file_path)}}" alt="{{movie.title}}" class="image-card"></div>
+<div class="overview text-red mt-5">
+    <h2>Overview</h2>
+    <p class="text-red ps-2">{{movie.overview}}</p>
+</div>
+<h4 class="text-red">rate: {{movie.vote_average}}</h4>
+
+<div class="reviews">
+    
+</div>
+

@@ -1,0 +1,11 @@
+<a [routerLink]="['/movieDetails','serise',serise.id]">
+  <div class="card">
+  <img src="{{this.service.mediaBase}}/{{serise.poster_path}}" alt="card-title" />
+  <div class="content">
+    <div class="inner-content">
+      <h2>{{serise.name}}</h2>
+      <p class="overview">
+        {{serise.overview.slice(0,100) == ''?"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolores vero totam. Blanditiis, eum unde repellendus minima obcaecati aut quas voluptatem minus perspiciatis suscipit pariatur. Assumenda, quae corrupti? Quasi, laudantium?":serise.overview.slice(0,100)}}...</p>
+    </div>
+  </div>
+</div></a>

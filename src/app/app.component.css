@@ -1,0 +1,14 @@
+.nav-style{
+    background-color: black;
+    border-bottom:4px solid rgba(255, 0, 0, 0.9);
+    
+    padding-bottom: 12px;
+}
+.text-red,.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:  rgba(255, 0, 0, 0.9);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: black;
+    font-size: 1.05rem;
+    transition: .5s;
+}

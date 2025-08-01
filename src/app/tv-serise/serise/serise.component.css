@@ -1,0 +1,45 @@
+.card {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    background-color: black;
+    border: none;
+  }
+  .content {
+    padding-left: 12px;
+    position: absolute;
+    top: 100%;
+    color: antiquewhite;
+    transition-duration: 0.6s;
+    /* transition-timing-function:cubic-bezier(0.19, 1, 0.22, 1); */
+    transition-timing-function: ease-in-out;
+    background-image: linear-gradient( 180deg, transparent 10%,rgba(255, 0, 0, 0.9));
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: end;
+    color: black;
+  }
+  .card:hover .content {
+    transform: translateY(-100%);
+  }
+  .card img {
+    display: block;
+    border-radius: 15px;
+    width: 250px;
+  }
+  .card h2 {
+    margin: 0;
+    border-bottom: 2px solid black;
+    width: fit-content  ;
+  }
+  .overview {
+    /* padding-left: 12px;
+        margin: 0;
+        position: absolute;
+        top:100% */
+        width: 100%;
+  }
+  .inner-content{
+    
+  }

@@ -1,0 +1,12 @@
+<a [routerLink]="['/movieDetails','movie',movie.id]">
+  <div class="card">
+  <img src="{{this.service.mediaBase}}/{{movie.poster_path}}" alt="card-title" />
+  <div class="content">
+    <div class="inner-content">
+      <h2>{{movie.title}}</h2>
+      <p class="overview">
+        {{movie.overview.slice(0,100)}}...
+      </p>
+    </div>
+  </div>
+</div></a>

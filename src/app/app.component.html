@@ -1,21 +1,52 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary z-1">
-  <div class="container">
-    <a class="navbar-brand" [routerLink]="['']" routerLinkActive="router-link-active" >Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg bg-black text-light z-1 sticky-top">
+  <div class="container nav-style">
+    <a
+      class="navbar-brand text-red"
+      [routerLink]="['']"
+      routerLinkActive="router-link-active"
+      >moviesSite</a
+    >
+    <button
+      class="navbar-toggler "
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item" (click)="isVisible=!isVisible">
-          <a class="nav-link" aria-current="page" ><i class="fa-solid fa-magnifying-glass">search</i></a>
+        <li class="nav-item" (click)="isVisible = !isVisible">
+          <a class="nav-link" aria-current="page"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
+        <li class="nav-item ">
+          <div class="dropdown ">
+            <a class="nav-link text-red"  [routerLink]="['/movies']">
+              movies
+            </a>
+           
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+          <div class="dropdown">
+            <a class="nav-link text-red" type="button" [routerLink]="['/tvSerises']">
+              tv serises
+            </a>
+            
+          </div>
         </li>
+
       </ul>
-      <button class="btn btn-primary ms-5">log in</button>
+      <!-- <button class="btn btn-danger ms-5">log in</button> -->
     </div>
   </div>
 </nav>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+  
+</div>
